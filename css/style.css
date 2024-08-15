@@ -1,0 +1,160 @@
+:root {
+  --blue: rgba(39, 66, 133, 1);
+  --black: rgba(0, 0, 0, 1);
+}
+
+@font-face {
+  font-family: "CooperHewitt";
+  src: url("/assets/font/CooperHewitt-Book.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "CooperHewitt";
+  src: url("/assets/font/CooperHewitt-Medium.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "CooperHewitt";
+  src: url("/assets/font/CooperHewitt-Bold.woff") format("woff");
+  font-weight: 700;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 16px 0;
+  font-size: 60px;
+  font-family: "CooperHewitt";
+  font-weight: 700;
+  color: var(--black);
+}
+
+a,
+p,
+span {
+  font-family: "CooperHewitt";
+  font-weight: 400;
+  color: var(--black);
+}
+
+ul {
+  padding-left: 0 !important;
+}
+
+.home-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.home-body .home-body_title {
+  margin-top: 50px;
+}
+
+.home-body .home-body_title h1 {
+  color: var(--blue);
+}
+
+.home-body_text p {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.home-body .home-body_img {
+  margin-bottom: 16px;
+}
+
+.home-body .home-body_img img {
+  width: 100%;
+  height: auto;
+}
+
+/*.home-footer {
+  display: flex;
+  justify-content: space-around;
+}*/
+
+.home-footer .home-footer_item h3 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.home-footer .home-footer_item p {
+  text-align: center;
+}
+
+.home-footer .social-links {
+  margin-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+}
+
+.mail {
+  text-decoration: none;
+}
+
+.home-footer .social-links li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  width: 35px;
+  height: 35px;
+  list-style: none;
+  background-color: var(--blue);
+  border-radius: 100%;
+  padding-left: 0 !important;
+}
+
+@media only screen and (max-width: 991px) {
+  .home-body {
+    margin-top: 5em;
+  }
+
+  .home-footer {
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center !important;
+  }
+
+  .home-body_title h1 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 537px) {
+  .home-body {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .home-body .home-body_img img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .home-body .home-body_title {
+    margin-top: 0;
+  }
+
+  .home-body_title h1 {
+    font-size: 30px;
+  }
+}
